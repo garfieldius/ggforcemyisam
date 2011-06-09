@@ -47,9 +47,7 @@ class ux_t3lib_install extends t3lib_install {
 	public function getFieldDefinitions_fileContent($fileContent) {		
 		$result = parent::getFieldDefinitions_fileContent($fileContent);
 		foreach ($result as &$table) {
-			if (!empty($table['extra']['ENGINE'])) {
-				$table['extra']['ENGINE'] = 'MyISAM';
-			}
+			$table['extra']['ENGINE'] = 'MyISAM';
 		}
 		return $result;
 	}
