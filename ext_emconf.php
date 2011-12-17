@@ -15,6 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Force the use of MyISAM as database engine for tables that are configured to use InnoDB. Supposed to be used with MariaDB.',
 	'category' => 'misc',
 	'shy' => 0,
+	'doNotLoadInFE' => 1,
 	'version' => '0.1.1',
 	'dependencies' => '',
 	'conflicts' => '',
